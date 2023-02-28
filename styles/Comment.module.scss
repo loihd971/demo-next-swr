@@ -1,0 +1,32 @@
+@import "@/styles/_mixins.scss";
+@import "@/styles/_variables.scss";
+
+.comment__wrapper {
+  min-height: 100vh;
+  overflow: auto;
+  justify-content: center;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  // @include tablet {
+  //   flex-direction: column;
+  // }
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.formik__wrapper {
+  //   width: 300px;
+  height: 100%;
+  gap: 1rem;
+  border-radius: 10px;
+  @include d-flex(column, null, null);
+}
+
+.field__error {
+  width: 100%;
+  color: $color-error !important;
+  font-size: 0.8rem;
+}
